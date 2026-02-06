@@ -1,10 +1,10 @@
-
 <?php
 
 namespace App\Enums;
 
-class UserRole extends Authenticatable
+class UserRole
 {
-    const ROLE_ADMIN = 'admin';
-    const ROLE_USER = 'user';
+    const ADMIN = 'admin';
+    const TEACHER = 'teacher';
+    const STUDENT = 'student';
 }
