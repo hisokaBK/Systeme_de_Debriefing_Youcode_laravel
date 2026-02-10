@@ -34,13 +34,11 @@ class User extends Authenticatable
         ];
     }
 
-    // Apprenant -> classe
     public function classe()
     {
         return $this->belongsTo(Classe::class);
     }
 
-    // Teacher -> classes
     public function classesTaught()
     {
         return $this->belongsToMany(
